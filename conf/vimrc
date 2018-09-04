@@ -1,0 +1,74 @@
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+"*********************************************   Base  ************************************************
+set encoding=utf-8
+set nu
+set rnu
+"去除vi的一致性
+set nocompatible
+"设置tab键为4个空格
+set tabstop=4
+"设置当行之间交错时使用4个空格
+set shiftwidth =4
+"代码折叠
+set foldmethod=indent
+set foldlevel=99
+
+"autocmd InsertEnter * se cul 
+
+"*********************************************   插件  ************************************************
+"vundle begin
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+"状态栏美化插件"
+Plugin 'bling/vim-airline'
+"代码资源管理器"
+Plugin 'scrooloose/nerdtree'
+"自动缩进插件
+Plugin 'vim-scripts/indentpython.vim'
+"自动补全单引号，双引号等"
+Bundle 'Raimondi/delimitMate'
+"自动格式化工具
+Plugin 'tell-k/vim-autopep8'
+"支持vim8的补全插件
+Plugin 'maralla/completor.vim'
+"语法检查
+Plugin 'vim-syntastic/syntastic'
+Plugin 'nvie/vim-flake8'
+"缩进指示线
+Plugin 'Yggdroot/indentLine'
+"配色方案
+Plugin 'altercation/vim-colors-solarized'
+"搜索文件
+Plugin 'kien/ctrlp.vim'
+
+
+call vundle#end()
+filetype plugin indent on
+
+"*********************************************   Set  ************************************************
+"代码资源管理器
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+"autocmd vimenter * NERDTree
+
+"代码折叠 快捷键
+nnoremap <space> za
+
+"缩进指示线
+let g:indentLine_char = "┆"
+let g:indentLine_enabled = 1
+let g:autopep8_disable_show_diff=1
+
+"自动格式化工具
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
+
+"配色方案
+syntax enable
+set background=dark
+"colorscheme solarized
+
+" Pluging ctrlp settings.
+ map <F3> :CtrlP<CR>
