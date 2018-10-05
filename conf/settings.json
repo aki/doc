@@ -1,7 +1,0 @@
-{
-    "explorer.confirmDelete": false,
-    "fileheader.Author": "aki",
-    "fileheader.LastModifiedBy": "aki",
-    "editor.fontSize": 13.5,
-    "fileheader.tpl": "# -*- coding:utf-8 -*-\r\n# Author: {author}\r\n# Email:heti@qq.com\r\n# Date: {createTime}\r\n"
-}
