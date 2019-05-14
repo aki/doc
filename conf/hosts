@@ -1,5 +1,12 @@
 Copyright (c) 2019 aki
 
+# windows Hosts 	 C:\Windows\System32\drivers\etc\hosts
+# linux Hosts 	  /etc/hosts
+
+# windows	sudo /etc/init.d/networking restart
+# linux		ipconfig /flushdns
+
+#------------------------------------------------------------------------------------------------------------
 
 # Localhost (DO NOT REMOVE) Start
 127.0.0.1	localhost
@@ -12,3 +19,5 @@ Copyright (c) 2019 aki
 192.30.255.110	www.github.com
 # Github End
 
+
+13.33.187.241	api.binance.com
