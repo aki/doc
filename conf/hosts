@@ -3,8 +3,8 @@ Copyright (c) 2019 aki
 # windows Hosts 	 C:\Windows\System32\drivers\etc\hosts
 # linux Hosts 	  /etc/hosts
 
-# windows	sudo /etc/init.d/networking restart
-# linux		ipconfig /flushdns
+# windows	ipconfig /flushdns
+# linux		sudo /etc/init.d/networking restart
 
 #------------------------------------------------------------------------------------------------------------
 
@@ -21,9 +21,18 @@ Copyright (c) 2019 aki
 
 # Ex
 13.33.187.241	api.binance.com
+
 104.16.171.181	api.bitfinex.com
 104.16.172.181	api.bitfinex.com
 104.16.173.181	api.bitfinex.com
 104.16.174.181	api.bitfinex.com
 104.16.175.181	api.bitfinex.com
+
+104.17.152.108	bittrex.com
+104.17.153.108	bittrex.com
+104.17.154.108	bittrex.com
+104.17.155.108	bittrex.com
+104.17.156.108	bittrex.com
+
+
 # End
