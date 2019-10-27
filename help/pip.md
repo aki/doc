@@ -1,5 +1,5 @@
 ###### python2 安装 pip
-    
+```
     wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py
 
     python get-pip.py
@@ -10,5 +10,6 @@
 
     [global]
     index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-    
+
     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
