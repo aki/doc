@@ -1,16 +1,16 @@
-Copyright (c) 2019 aki
+#Copyright (c) 2019 aki
 
-# windows Hosts     C:\Windows\System32\drivers\etc\hosts
-# linux Hosts       /etc/hosts
+# linux		/etc/hosts
+# windows	C:/Windows/System32/drivers/etc/hosts
+#https://github.com/googlehosts/hosts/blob/master/hosts-files/hosts
 
-# windows	ipconfig /flushdns
-# linux		sudo /etc/init.d/networking restart
 
 127.0.0.1	localhost
 
 192.30.253.118	gist.github.com
 192.30.255.112	github.com
 192.30.255.110	www.github.com
+140.82.114.4	www.github.com
 
 13.33.187.241	api.binance.com
 99.84.169.185	api.binance.com
